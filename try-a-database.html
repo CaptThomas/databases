@@ -26,11 +26,12 @@
     float: left;
 }
 .column100 {
-    float: none;
+    float: left;
     height: auto;
     width: 100%;
 }
 .Update {
+    
     background-color: #6C6C6C;
     float: left;
     height: auto;
@@ -60,6 +61,11 @@
     height: auto;
     width: 100%;
 }
+.column80 {
+    height: auto;
+    width: 80%;
+    text-align: center;
+}
 </style>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--> 
 <script>var __adobewebfontsappname__="dreamweaver"</script> 
@@ -68,14 +74,18 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
   <div class="Title" align="center">
     <div class="navigation"><a href="index.html" style="font-size: 30px">Home</a> <a href="installation.html" style="font-size: 30px">Installation Guides</a> <a href="database-usage.html" style="font-size: 30px">Usage</a> <a href="try-a-database.html" style="font-size: 30px">Try A Database</a></div>
     <img src="images/title.png" alt="Title"> </div>
-        </div>
-    <div class="column100" align="center"><h1>Free Test Database</h1></div>
-    <div class="column100">Visit this <a href="https://sodadb.com/kZuOiu1jgrDLvlpfCbAQ">link</a> to try out a free database. It is formatted as an addressbook, so go ahead and add your name once you finish exploring this website.</div>
-    <div class="column100" align="center"><h2>Free MySQL Hosting</h2></div>
-    <div class="column100" align="center">If you would like to have an external database for testing, go to <a href="https://remotemysql.com">Remote MySQL</a>. I have used them before on multiple occasions and found their databases very reliable. They use randomized user and password combos for security but you can change those in PHP WebAdmin. However, only use this service if you know that you will not need more than 1 GB of database storage.</div>
+</div>
+<div class="column100" align="center">
+  <h1>Free Test Database</h1>
+</div>
+<div class="column80">Visit this <a href="https://sodadb.com/kZuOiu1jgrDLvlpfCbAQ">link</a> to try out a free database. It is formatted as an addressbook, so go ahead and add your name once you finish exploring this website. This will show you how databases work as it has column and rows as a proper database does. It is a common example of a relational database. Also, it demonstrates permissions as you have SELECT, INSERT, UPDATE, DELETE, CREATE priviliges.</div>
+<div class="column100" align="center">
+  <h2>Free MySQL Hosting</h2>
+</div>
+<div class="column100" align="center">If you would like to have an external database for testing, go to <a href="https://remotemysql.com">Remote MySQL</a>. I have used them before on multiple occasions and found their databases very reliable. They use randomized user and password combos for security but you can change those in PHP WebAdmin. However, only use this service if you know that you will not need more than 1 GB of database storage.</div>
 </body>
 </html>
