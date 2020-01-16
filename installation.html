@@ -79,13 +79,13 @@
       <img src="images/title.png" alt="Title"> </div>
     <div class="Comparison">
       <h2 style="text-align: center">How To Install MySQL (For Linux)</h2>
-      <div class="column50" style="color: #FFFFFF; background: #414141; font-family: 'source-code-pro'; border:1px solid red">sudo apt-get update<br>
-        sudo apt-get install mysql-server<br>
-        sudo mysql_secure_installation utility # if installation utility does not start automatically<br>
-        sudo ufw enable # optional: allows remote access <br>
-        sudo ufw allow mysql # remember to port forward<br>
-        sudo systemctl start mysql<br>
-        sudo systemctl enable mysql</div>
+        <div class="column50">
+          <h3><br>
+          </h3>
+          <div><br>
+          </div>
+        </div>
+
       <div class="column50" align="center" style="border:1px solid red">After doing these steps, open /etc/mysql/mysql.conf.d/mysqld.cnf. If you do not have a graphical interphase on your server, use nano to edit. Scroll down to where bind-address is. Edit the following code in your file with a choice of your own for the service to listen on.<br>
         <p style="background-color: #414141; color: #FFFFFF">bind-address		= 127.0.0.1 ( The default. )<br>
           bind-address		= XXX.XXX.XXX.XXX ( The IP address of your Public Net interface. )<br>
@@ -95,6 +95,13 @@
   <p style="background-color: #414141; color: #FFFFFF">sudo systemctl restart mysql<br>
     /usr/bin/mysql -u root -p # enter the password you used for installation or press Enter if you didn't set one</p>
       </div>
+      <div class="column50" style="color: #FFFFFF; background: #414141; font-family: 'source-code-pro'; border:1px solid red"><h3>Paste these lines into your terminal</h3>sudo apt-get update<br>
+        sudo apt-get install mysql-server<br>
+        sudo mysql_secure_installation utility # if installation utility does not start automatically<br>
+        sudo ufw enable # optional: allows remote access <br>
+        sudo ufw allow mysql # remember to port forward<br>
+        sudo systemctl start mysql<br>
+        sudo systemctl enable mysql</div>
       <div class="column100">After completing all this, you will have a functioning MySQL service. You may now install other packages that need a database to function. Common examples include PHP extensions.</div>
     </div>
     <div class="column100" align="center"><h1>For Windows</h1></div>
