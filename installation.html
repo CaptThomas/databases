@@ -83,7 +83,8 @@
     <img src="images/title.png" alt="Title"> </div>
   <div class="Comparison">
     <h2 style="text-align: center">How To Install MySQL (For Linux)</h2>
-    <div class="column50" style="font-size: 20px"> MySQL can do much of the workhorse kind of stuff you see in databases like Oracle or SQL Server, but sometimes it achieves those goals in very different ways.  For instance there are many open-source projects that support and surround the database, such as <a href="https://packages.debian.org/jessie/mysqltuner">mysqltuner</a> an analysis script, <a href="https://www.percona.com/blog/2013/10/14/innotop-real-time-advanced-investigation-tool-mysql/">innotop</a> a unix top-like utility for monitoring on-going activity in the database, and <a href="https://tracker.debian.org/pkg/maatkit">maatkit</a> a whole suite of tools that build on and expand the features already present in the MySQL database.<br>SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is an essential part of almost every open source PHP application. Good examples for PHP & MySQL-based scripts are WordPress, Joomla, Magento and Drupal. </div>
+    <div class="column50" style="font-size: 20px"> MySQL can do much of the workhorse kind of stuff you see in databases like Oracle or SQL Server, but sometimes it achieves those goals in very different ways.  For instance there are many open-source projects that support and surround the database, such as <a href="https://packages.debian.org/jessie/mysqltuner">mysqltuner</a> an analysis script, <a href="https://www.percona.com/blog/2013/10/14/innotop-real-time-advanced-investigation-tool-mysql/">innotop</a> a unix top-like utility for monitoring on-going activity in the database, and <a href="https://tracker.debian.org/pkg/maatkit">maatkit</a> a whole suite of tools that build on and expand the features already present in the MySQL database.<br>
+      SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is an essential part of almost every open source PHP application. Good examples for PHP & MySQL-based scripts are WordPress, Joomla, Magento and Drupal. </div>
     <div class="column50" align="center" style="border:1px solid red; text-align: justify">After doing these steps, open /etc/mysql/mysql.conf.d/mysqld.cnf. If you do not have a graphical interphase on your server, use nano to edit. Scroll down to where bind-address is. Edit the following code in your file with a choice of your own for the service to listen on.<br>
       <p style="background-color: #414141; color: #FFFFFF">bind-address		= 127.0.0.1 ( The default. )<br>
         bind-address		= XXX.XXX.XXX.XXX ( The IP address of your Public Net interface. )<br>
@@ -105,48 +106,53 @@
     <div class="column100" style="font-size: 20px"> After completing all this, you will have a functioning MySQL service. You may now install other packages that need a database to function. Common examples include PHP extensions. The following extentions are recommended for Wordpress websites: gmagick
       ssh2
       exif
-      imagick<br>The following are required, but should be installed by default: dom
-gmagick
-SimpleXML
-ssh2
-xml
-xmlreader
-curl
-date
-exif
-filter
-ftp
-gd
-hash
-iconv
-imagick
-json
-libxml
-mbstring
-mysqli
-openssl
-pcre
-posix
-sockets
-SPL
-tokenizer
-zlib</div>
+      imagick<br>
+      The following are required, but should be installed by default: dom
+      gmagick
+      SimpleXML
+      ssh2
+      xml
+      xmlreader
+      curl
+      date
+      exif
+      filter
+      ftp
+      gd
+      hash
+      iconv
+      imagick
+      json
+      libxml
+      mbstring
+      mysqli
+      openssl
+      pcre
+      posix
+      sockets
+      SPL
+      tokenizer
+      zlib</div>
   </div>
   <div class="column100" align="center">
     <h1>For Windows</h1>
   </div>
   <div class="Comparison">
-    <div class="column50v2">
+    <div class="column100">
       <h2 align="center">How To Install Microsoft SQL</h2>
-      <ol>
-        <li>Open the installer</li>
-        <li>Click New SQL Server stand-alone installation and include whatever product updates you feel are required</li>
-        <li>Allow the defaults under Feature Selection, Instance Configuration, and Server Configuration</li>
-        <li>In Database Engine Configuration, under Authentication Mode, choose Mixed Mode and specify a password you would like to use</li>
-        <li>Use the default settings for the rest of the dialogs</li>
-      </ol>
     </div>
-    <div class="column50v2" align="center"><img src="images/microsoft-sql-installation.png" width="350" alt="Complete installation of Mircosoft SQL Server"></div>
+    <div class="column100">
+      <div class="column50v2">
+        <ol>
+          <li>Open the installer</li>
+          <li>Click New SQL Server stand-alone installation and include whatever product updates you feel are required</li>
+          <li>Allow the defaults under Feature Selection, Instance Configuration, and Server Configuration</li>
+          <li>In Database Engine Configuration, under Authentication Mode, choose Mixed Mode and specify a password you would like to use</li>
+          <li>Use the default settings for the rest of the dialogs</li>
+        </ol>
+      </div>
+      <div class="column50v2" align="center"><img src="images/microsoft-sql-installation.png" width="350" alt="Complete installation of Mircosoft SQL Server"></div>
+    </div>
   </div>
   <div class="Comparison" align="center">
     <h2>How To Install Oracle</h2>
